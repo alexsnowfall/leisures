@@ -1,0 +1,42 @@
+#sum of the no;s between two no.s i,j;
+#source : hackerearth
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+/*
+	 * uncomment this if you want to read input.
+	 */
+	import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.math.BigInteger;
+
+
+	class test1 {
+	    public static void main(String args[] ) throws NullPointerException,Exception {
+	        /*
+	         * Read input from stdin and provide input before running
+			*/
+	    	
+	    	
+	    	
+	    	String s[] = "3 5".split(" ");
+	    	BigInteger b = new BigInteger(s[0]);
+	    	BigInteger b1 = new BigInteger(s[1]);
+	    	BigInteger d = BigInteger.valueOf(1);
+	    	BigInteger v = BigInteger.valueOf(2);
+	    	d = d.add(b1);
+	    	d = d.subtract(b);
+	    	
+	    	BigInteger sum = BigInteger.valueOf(0);
+	    	sum = sum.add(b);
+	    	sum = sum.add(b1);
+	    	
+	    	sum = sum.multiply(d);
+	    	sum = sum.divide(v);
+	    	
+	    	System.out.println(sum);
+}
+}
